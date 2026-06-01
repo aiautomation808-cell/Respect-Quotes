@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-blue-deep: #0d1b2a;
+  --color-blue-mid: #1b2d42;
+  --color-blue-accent: #1e88e5;
+  --color-blue-light: #64b5f6;
+  --color-page-bg: #f4f0e6;
+  --color-page-bg2: #ede8da;
+  --color-ink: #1a2535;
+  --color-ink-muted: #5a6a7a;
+
+  --font-serif: "Lora", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--color-blue-deep);
+  color: #e8e0d0;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 20% 50%, rgba(30,136,229,0.07) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 60% at 80% 30%, rgba(100,181,246,0.05) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Custom background for the book pages */
+.page-lines {
+  background-image: repeating-linear-gradient(to bottom, transparent, transparent 31px, rgba(30,80,140,0.08) 31px, rgba(30,80,140,0.08) 32px);
+  background-position: 0 58px;
+}

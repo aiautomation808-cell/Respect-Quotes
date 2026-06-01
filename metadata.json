@@ -1,0 +1,6 @@
+{
+  "name": "SoulBook",
+  "description": "A single-page website for kindness & respect quotes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
